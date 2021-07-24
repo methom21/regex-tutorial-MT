@@ -67,46 +67,17 @@ Example, ```[a-z]``` Includes all lowercase letter a-z. ```[0-9]``` Includes all
 
 **Character Class defines a set of characters.**<br>
 ```.``` - Find a single character, except newline or line terminator <br>
-```\w``` - Find a word character<br>
-```\W``` - Find a non-word character<br>
 ```\d``` - Find a digit<br>
-```\D``` - Find a non-digit character<br>
-```\s``` - Find a whitespace character<br>
-```\S``` - Find a non-whitespace character<br>
-```\b``` - Find a match at the beginning/end of a word, beginning like this: \bHI, end like this: HI\b<br>
-```\B``` - Find a match, but not at the beginning/end of a word<br>
-```\0``` - Find a NULL character<br>
-```\n``` - Find a new line character<br>
-```\f``` - Find a form feed character<br>
-```\r``` - Find a carriage return character<br>
-```\t```- Find a tab character<br>
-```\v``` - Find a vertical tab character<br>
-```\xxx``` - Find the character specified by an octal number xxx<br>
-```\xdd``` - Find the character specified by a hexadecimal number dd<br>
-```\udddd``` - Find the Unicode character specified by a hexadecimal number dddd
+
 
 ## The OR Operator
 ```|``` -  Can provide as many terms as desired, as long as they are separated with the pipe character.
 
 Example: ^I like ```(dogs|penguins)```, but not ```(lions|tigers)```$
 
-## Flags
-Regular expressions have six optional flags that allow for functionality like global and case insensitive searching. These flags can be used separately or together in any order, and are included as part of the regular expression.
 
-```d``` - Generate indices for substring matches. <br>
-```g``` - Global search.<br>
-```i``` - Case-insensitive search.<br>
-```m``` - Multi-line search.<br>
-```s``` - Allows . to match newline characters.<br>
-```u``` - "unicode"; treat a pattern as a sequence of unicode code points.<br>
-```y``` - Perform a "sticky" search that matches starting at the current position in the target string.
 
-Example: re = /\w+\s/g creates a regular expression that looks for one or more characters followed by a space, and it looks for this combination throughout the string.
 
-## Character Escapes
-```\``` - Will match literal instead of special character.
-
-Example: To search for the string ```/example/``` followed by one or more alphabetic characters, you'd use ```/\/example\/[a-z]+/i```
 
 ## Sources
 source - https://coding-boot-camp.github.io/full-stack/computer-science/regex-tutorial <br>
