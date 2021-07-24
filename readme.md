@@ -1,5 +1,5 @@
 # Regex-Tutorial
-This tutorial breaks down the regular expressions. 
+This tutorial breaks down the regular expression of email validation. 
 
 ## Summary
 ```
@@ -30,17 +30,9 @@ The ```^``` character is used at the beginning to signify the start of a Regex s
 
 ## Quantifiers
 
-```*``` — **Matches the pattern zero or more times.**
-
-For example, ```/bo*/``` matches "boo" in "A ghost booed" and "b" in "A bird babbled", but will not match anything in "A goat grunted".
-
 ```+``` — **Matches the pattern one or more times.**
 
 Equivalent to ```{1,}```. For example, ```/a+/``` matches the "a" in "candy" and all the "a"'s in "caaaandy".
-
-```?``` — **Matches the pattern zero or one time.**
-
-For example, ```/e?le?/``` matches the "el" in "angel" and the "le" in "angle." If used immediately after any of the quantifiers ```*, +, ?, or {}``` makes the quantifier non-greedy (matching the minimum number of times), as opposed to the default, which is greedy (matching the maximum number of times).
 
 ```{}``` — **Curly brackets can provide three different ways to set limits for a match:* ```{ n } || { n, } || { n, x }```
 
@@ -123,4 +115,4 @@ source - http://web.mit.edu/gnu/doc/html/regex_3.html
 
 ## Author
 Mikey Thompson<br>
-### github 
+### github https://github.com/methom21
